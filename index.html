@@ -17,14 +17,17 @@
 </head>
 
 <body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
   <aside class="menu white-bg">
     <div class="main-content menu-content">
-      <h1>
+      <h1 onclick="getElementById('close-menu').checked = false;">
         <a href="#home">LOGO</a>
       </h1>
 
       <nav>
-        <ul>
+        <ul onclick="getElementById('close-menu').checked = false;">
           <li><a href="#intro">intro</a></li>
           <li><a href="#grid-one">grid-one</a></li>
           <li><a href="#gallery">gallery</a></li>
@@ -262,6 +265,8 @@
   <footer id="footer" class="footer white-bg">
     <p><a rel="nofollow" target="_blank" href="https://beacons.page/otaviomiranda">Feito com <span class="heart">❤</span> por Otávio Miranda</a></p>
   </footer>
+
+  <a class="back-to-top" href="#">➤</a>
 </body>
 
 </html>
